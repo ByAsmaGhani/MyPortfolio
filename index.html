@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+  </head>
+  <body id="overall">
+    <nav id="desktop-nav">
+      <div class="logo">By Asma</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#overall">Profile</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#learning">Learning</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">By Asma</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#overall" onclick="toggleMenu()">Profile</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#learning" onclick="toggleMenu()">Learning</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="profile-image" src="./assets/AsmaProfilePicture.jpg" alt="Asma profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Asma Abd Ghani</h1>
+        <p class="section__text__p2">Your Future Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/AsmaResume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/asmaghani/', '_blank')"/>
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/ByAsmaGhani/', '_blank')"
+          />
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#about'"
+    />
+
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Asma.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiences</h3>
+              <p>First year<br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Engineering, honours<br />Biomedical Electronic Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I had more than two years of working experience in Project Development / Customer Service / Management
+              Systems, fast learner with a proven track record in diverse industries. I currently working as Network Security Engineer at Maxis Malaysia, simultaneously channeling my passion in front end web development.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#learning'"
+    />
+    </section>
+
+    <section id="learning">
+
+      <div class="container">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Continuous Learning at Udemy.Com</h1>
+   
+        <div class="row justify-content-center">
+          <div class="col-auto">
+        <img src="./assets/udemy.png" width="220" height="250" alt="Centered Image">
+          </div>
+          <p class="udemy">April 01, 2024 - Present</p>
+          <p class="udemy">Throughout this comprehensive course, I learn a massive amount of tools and technologies, including:</p>
+        </div>
+
+       <div class="learning-container">
+      <div class="learning-plan">
+        <div class="plan-title">Front End Development</div>
+        <ul class="plan-features">
+          <li>✅ HTML5</li>
+          <li>✅ CSS3</li>
+          <li>✅ JavaScript ES6</li>
+          <li>✅ Bootstrap 5</li>
+          <li>✅ Git, Github</li>
+          <li>✅ Web Design</li>
+        </ul>
+      </div>
+      <div class="learning-plan">
+        <div class="plan-title">Back End Developer</div>
+        <ul class="plan-features">
+          <li>✅ REST</li>
+          <li>✅ APIs</li>
+          <li>✅ PostgreSQL</li>
+          <li>✅ React.js</li>
+          <li>✅ Authentication</li>
+          <li>✅ Node.js</li>
+        </ul>
+
+      </div>
+    </div>
+      </div>
+
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
+
+  </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/miniGame.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Mini Game</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/ByAsmaGhani/Rock-Paper-Scissor-Mini-Game', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://byasmaghani.github.io/Rock-Paper-Scissor-Mini-Game/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/MyResume.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">My Resume Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/ByAsmaGhani/Asma-Resume-HTML', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://byasmaghani.github.io/Asma-Resume-HTML/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/YouTubeClone.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">YouTube.com Clone</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/ByAsmaGhani/YouTube.Clone-Learning', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://byasmaghani.github.io/YouTube.Clone-Learning/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+            onclick="window.open('mailto:asmaghani2202@gmail.com', '_blank')"
+          />
+          <p><a href="mailto:asmaghani2202@gmail.com">asmaghani2202@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+            onclick="window.open('https://www.linkedin.com/in/asmaghani/', '_blank')"
+          />
+          <p><a href="https://www.linkedin.com/in/asmaghani" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+  
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#overall">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#learning">Learning</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 By Asma. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
